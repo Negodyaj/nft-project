@@ -1,0 +1,65 @@
+@import 'common';
+
+#hero {
+  display: flex;
+  gap: 30px;
+
+  h1 {
+    font-size: 67px;
+    line-height: 74px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 35px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    width: max-content;
+    margin-bottom: 30px;
+  }
+
+  .statistics {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 30px;
+    font-size: 24px;
+    line-height: 38px;
+
+    b {
+      font-family: $secondary-font;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 39px;
+    }
+  }
+
+  .hero-card-image {
+    display: block;
+  }
+
+  .card-content {
+    padding: 22px 20px;
+    background-color: $card-background-color;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .card-title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 31px;
+    margin-bottom: 10px;
+  }
+
+  .card-author {
+    display: flex;
+    gap: 12px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

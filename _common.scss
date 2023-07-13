@@ -1,0 +1,59 @@
+$main-font: 'Work Sans', sans-serif;
+$secondary-font: 'Space Mono', monospace;
+$accent-color: #A259FF;
+$card-background-color: #3B3B3B;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #2B2B2B;
+  color: white;
+  font-family: $main-font;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.container {
+  padding: 80px 0;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 0 30px;
+  border-radius: 20px;
+  gap: 12px;
+  color: white;
+  border: 1px solid $accent-color;
+
+  &.fill {
+    background-color: $accent-color;
+  }
+}
+
+header {
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  .nav-link + .nav-link {
+    margin-left: 20px;
+  }
+}
