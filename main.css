@@ -7,6 +7,7 @@ body {
   background-color: #2B2B2B;
   color: white;
   font-family: "Work Sans", sans-serif;
+  padding-top: 100px;
 }
 
 a {
@@ -19,6 +20,12 @@ a {
   padding: 80px 0;
   max-width: 1050px;
   margin: 0 auto;
+}
+.container h2 {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 120%;
+  text-transform: capitalize;
 }
 
 .btn {
@@ -34,12 +41,22 @@ a {
 .btn.fill {
   background-color: #A259FF;
 }
+.btn:hover {
+  background-color: #8526ff;
+}
+.btn:hover path {
+  fill: red;
+}
 
 header {
   padding: 20px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
 nav {
@@ -105,4 +122,47 @@ nav .nav-link + .nav-link {
   gap: 12px;
   font-size: 16px;
   line-height: 22px;
+}
+
+#categories .categories-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+#categories .category-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #3B3B3B;
+}
+#categories .icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
+}
+#categories .category-card-top {
+  position: relative;
+  display: flex;
+}
+#categories .category-card-top span {
+  position: absolute;
+  z-index: 1;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+#categories .category-card-bottom {
+  padding: 20px 30px 25px 30px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: capitalize;
 }/*# sourceMappingURL=main.css.map */

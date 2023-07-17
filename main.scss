@@ -63,3 +63,52 @@
     line-height: 22px;
   }
 }
+
+#categories {
+  .categories-grid {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .category-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    background: $card-background-color;
+  }
+
+  .icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(7.5px);
+  }
+
+  .category-card-top {
+    position: relative;
+    display: flex;
+
+    span {
+      position: absolute;
+      z-index: 1;
+      bottom: 50px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .category-card-bottom {
+    padding: 20px 30px 25px 30px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: capitalize;
+  }
+}

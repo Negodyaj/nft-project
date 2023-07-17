@@ -12,6 +12,7 @@ body {
   background-color: #2B2B2B;
   color: white;
   font-family: $main-font;
+  padding-top: 100px;
 }
 
 a {
@@ -24,6 +25,13 @@ a {
   padding: 80px 0;
   max-width: 1050px;
   margin: 0 auto;
+
+  h2 {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: capitalize;
+  }
 }
 
 .btn {
@@ -39,6 +47,14 @@ a {
   &.fill {
     background-color: $accent-color;
   }
+
+  &:hover {
+    background-color: darken($accent-color, 10%);
+
+    path {
+      fill: red;
+    }
+  }
 }
 
 header {
@@ -46,6 +62,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
 nav {
