@@ -57,6 +57,13 @@ a {
   }
 }
 
+.icon-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  height: 24px;
+}
+
 header {
   padding: 20px 50px;
   display: flex;
@@ -75,5 +82,60 @@ nav {
 
   .nav-link + .nav-link {
     margin-left: 20px;
+  }
+}
+
+@media (min-width: 851px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 850px) {
+  .desktop-only {
+    display: none !important;
+  }
+
+  body {
+    overflow-x: hidden;
+    padding-top: 54px;
+  }
+
+  .container {
+    padding: 40px 30px;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  header {
+    padding: 15px 30px;
+
+    .logo {
+      width: 183px;
+    }
+
+    nav {
+      position: absolute;
+      flex-direction: column;
+      right: 0;
+      top: 54px;
+      background-color: $card-background-color;
+      align-items: flex-end;
+      padding: 30px;
+      width: 100%;
+      transition: all .4s ease;
+      transform: translateX(100%);
+
+      &.visible {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  nav .nav-link + .nav-link {
+    margin: 0;
   }
 }
