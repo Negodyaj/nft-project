@@ -176,11 +176,25 @@ nav .nav-link + .nav-link {
   line-height: 22px;
 }
 
+#categories .grid-wrapper {
+  position: relative;
+}
+#categories .carousel-control {
+  position: absolute;
+  top: 50%;
+  margin-top: -40px;
+}
+#categories .carousel-control.left {
+  left: -40px;
+}
+#categories .carousel-control.right {
+  right: -40px;
+}
 #categories .categories-grid {
   margin-top: 60px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
   gap: 30px;
+  overflow: hidden;
 }
 #categories .category-card {
   display: flex;
@@ -188,6 +202,10 @@ nav .nav-link + .nav-link {
   border-radius: 20px;
   overflow: hidden;
   background: #3B3B3B;
+  flex-shrink: 0;
+}
+#categories .category-card:first-child {
+  transition: all 0.4s ease;
 }
 #categories .icon-wrapper {
   display: flex;
