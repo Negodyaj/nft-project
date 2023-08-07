@@ -74,6 +74,21 @@ const categories = [
     icon: './assets/icons/Planet.svg',
   },
 ];
+categories[0] = { id: 1, name: '222'};
+
+const categories1 = categories;
+let idToUpdate = 1;
+
+const categories2 = categories.map(item => item.id === idToUpdate ? {...item, lastName: 'jopa'} : item);
+
+categories[0].name = '444';
+categories[2] = 'jopa';
+console.log(categories1);
+const t = {};
+t.id = 2;
+t.name = 'jopa';
+
+console.log(t);
 
 function renderCategories() {
   const cardsMarkup = categories.map(item => (`
